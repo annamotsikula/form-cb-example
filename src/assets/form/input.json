@@ -1,0 +1,49 @@
+[
+    {
+        "controlType" : "text",
+        "id": "name",
+        "order": 1,
+        "label" : "full name",
+        "required": true,
+        "placeholder": "ex: John Doe"
+    },
+    {
+        "controlType" : "email",
+        "id": "email",
+        "order": 2,
+        "label" : "",
+        "required": true,
+        "placeholder": "ex: johndoe@email.com"
+
+
+    },
+    {
+        "controlType" : "password",
+        "id": "password",
+        "order": 4,
+        "label" : "password",
+        "required": true,
+        "placeholder": ""
+
+
+    },
+    {
+        "controlType" : "number",
+        "id": "phone",
+        "order": 3,
+        "label" : "phone number",
+        "required": true,
+        "placeholder": "ex: +1 (999) 287-12-20"
+
+
+    },
+    {
+        "controlType" : "date",
+        "id": "date",
+        "order": 5,
+        "label" : "birth date",
+        "required": true
+
+
+    }
+]

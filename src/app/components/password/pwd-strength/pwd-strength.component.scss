@@ -1,0 +1,37 @@
+.strength {
+  min-width: 210px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0px 0px 4px 0px rgb(219 219 219 / 75%);
+}
+.strengthBar {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: 2px;
+  }
+  
+  .point:last-of-type {
+    margin: 0 !important;
+  }
+  
+  .point {
+    background: #DDD;
+    border-radius: 2px;
+    display: inline-block;
+    height: 5px;
+    margin-right: 1px;
+    width: 40px;
+  }
+  .msg {
+    
+    font-weight: bold;
+  }
+  .msg, .notification {
+    font-size: 14px;
+  }
+  .notification {
+    color: #8c92a2
+  }

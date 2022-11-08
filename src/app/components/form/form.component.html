@@ -1,0 +1,10 @@
+<form class="form" [formGroup]="formData" (ngSubmit)="onSubmit()">
+   <div>
+      <form-input *ngFor="let field of formDisplayData" [metaData]="field" [parentForm]="formData" (sendStatus)="checkStatus = $event"></form-input> 
+   </div>
+   <button class="btn" type="submit" [ngClass]="{'disabled' : !isValid()}" >Sign up</button>
+</form>
+<label class="terms form">I agree to our Terms of Service and Privacy Policy
+   <input type="checkbox" [(ngModel)]="allowTerms">
+   <span class="checkmark"></span>
+</label>

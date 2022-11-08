@@ -1,0 +1,7 @@
+<div class="strength flex-wrap">
+    <span *ngIf="msg" class="d-block msg">{{msg}}</span>
+    <ul class="strengthBar">
+        <li class="point" *ngFor="let bar of barLevel" [style.background-color]="bar"></li>
+    </ul>
+    <span class="notification d-block">{{alertText}}</span>
+</div>

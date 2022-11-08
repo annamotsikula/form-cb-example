@@ -1,0 +1,32 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5rem;
+}
+.intro-ads {
+    max-width: 280px;
+  li {
+    padding-left: 26px;
+    position: relative;
+  }
+    h2 {
+        font-size: 46px;
+        font-weight: 800;
+    }
+    .bi {
+        position: absolute;
+        left: 0;
+        color: #3f40f0
+    }
+}
+.sign-up-form {
+    min-width: 450px;
+}
+
+@media screen and (max-width: 790px) {
+    .sign-up-form {
+        margin-top: 2rem
+    }
+}

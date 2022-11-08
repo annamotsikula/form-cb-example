@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+* {
+ font-family: 'Work Sans';
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+html, body { height: 100%; }
+body { margin: 0; }
+p, span, label, li {
+    color: #45474c
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

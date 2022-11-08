@@ -1,0 +1,22 @@
+<form class="input-field" 
+    *ngIf="metaData" 
+    [formGroup]="parentForm" 
+    >
+    <input  [type]="metaData.controlType === 'password' && toggleShowPassw ? 'text' : metaData.controlType" 
+            [id]="metaData.id" 
+            [formControlName]="metaData.id" 
+            [placeholder]="metaData.placeholder" 
+    >
+    <label class="input-label" [for]="metaData.id">{{metaData.label | titlecase}}</label>
+    <i class="bi bi-check2" *ngIf="!parentForm.controls[metaData.id].errors && metaData.id !== 'password' && metaData.id !== 'date'"></i>
+    <i class="bi" [ngClass]="toggleShowPassw ? 'bi-eye-slash' : 'bi-eye' " *ngIf="metaData.id === 'password'" (click)="toggleShowPassw = !toggleShowPassw"></i>
+    <pwd-strength 
+    class="pwd" 
+        *ngIf="metaData.id === 'password' &&  password.dirty && password.value !== '' " 
+        [passwordToVerify]="parentForm.value.password" 
+        (pwdStrongEnough)="passwordValid($event)">
+    </pwd-strength>
+    <ng-container *ngIf="parentForm.controls[metaData.id].dirty && parentForm.controls[metaData.id].touched">
+        <div *ngIf="parentForm.controls[metaData.id].errors?.['required']" class="validation-error">Please enter {{metaData.id}}</div>
+    </ng-container>
+</form>
